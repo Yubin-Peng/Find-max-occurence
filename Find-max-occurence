@@ -1,0 +1,17 @@
+a = "This is a common interview      question"
+alist = list(a)
+print(alist)
+
+count = 0
+max = 0
+
+for i in alist:
+    if i == ' ':
+        continue
+    
+    count = alist.count(i)
+    if count > max:
+        max = count
+        maxc = i
+    
+print(max, maxc)
